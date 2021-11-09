@@ -1,0 +1,106 @@
+:root{
+    --cinza-escuro: #141414;
+    --branco: #fff;
+    --cinza: grey;
+    --vermelho: #E50914;
+}
+
+body{
+    background-color: #141414;
+}
+
+#netflix{
+    margin-left: 40px;
+    padding-top: 20px;
+    color: #E50914;
+}
+
+.netflix-head{
+    padding-bottom: 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 13%, rgba(255,255,255,0) 100%);
+}
+
+#assistindo{
+    color: #fff;
+}
+
+#perfis{
+    color: grey;
+}
+
+.margin{
+    font-size: 80px;
+    margin-top: 8%;
+    padding-bottom: 10px;
+}
+
+.perfis{
+    width: 57%;
+    padding-bottom: 60px;
+}
+
+.botao{
+    background-color: var(--cinza-escuro);
+    color: grey;
+    border-width: thin;
+    border-color: grey;
+    border-style: solid;
+    font-size: 1.2vw;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+
+    transition: .1s ease all;
+}
+
+.botao:hover{
+    color: white;
+    border-color: white;
+}
+
+.anchor{
+    text-decoration: none;
+    color: grey;
+    transition: .2s ease all;
+}
+
+.anchor:hover{
+    color: white;
+}
+
+.imagem-perfil{
+    transition: .2s ease all;
+    border-radius: 2%;
+}
+
+.imagem-perfil:hover{
+    border-style: solid;
+    border-color: white;
+    border-width: thick;
+}
+
+.nome-perfil{
+    font-size: 25px;
+}
+
+/*reponsividade*/
+
+@media screen and (max-width:700px){
+    .margin{
+        font-size: 150%;
+    }
+   .container{
+       width: 100%;
+   }
+   .netflix{
+       width: 8%;
+       text-align: center;
+       justify-content: center;
+   }
+   #gerenciar{
+       display: none;
+   }
+}
